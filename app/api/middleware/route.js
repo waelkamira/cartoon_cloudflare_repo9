@@ -1,6 +1,6 @@
 // pages/api/your-api.js
 import Cors from 'cors';
-import initMiddleware from '../../lib/init-middleware';
+import initMiddleware from '../../../lib/init-middleware';
 export const runtime = 'edge';
 
 // إعداد CORS مع السماح للروابط المحددة فقط
@@ -8,6 +8,7 @@ const cors = initMiddleware(
   Cors({
     origin: [
       'http://localhost:3000',
+      'http://localhost:3001',
       'https://cartoonz.top',
       'https://tangerine-peony-0ad7c0.netlify.app',
       'https://stalwart-gecko-9da6bc.netlify.app/',
