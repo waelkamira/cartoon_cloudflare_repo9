@@ -1,6 +1,7 @@
 // pages/api/your-api.js
 import Cors from 'cors';
 import initMiddleware from '../../lib/init-middleware';
+export const runtime = 'edge';
 
 // إعداد CORS مع السماح للروابط المحددة فقط
 const cors = initMiddleware(
